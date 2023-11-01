@@ -35,7 +35,7 @@ public class Main {
 
         System.out.println("Запускаем лотерею: \n***************************************");
 
-        try (FileWriter writer = new FileWriter("Results.txt", true)) {
+        try (FileWriter writer = new FileWriter("Results.txt")) {
             for (int i = lotera.size(); i > 0; i--) {
                 Toy priz = (Toy) lotera.remove();
                 System.out.println("Вам выпало: \n" + priz + "\n_________________________");
